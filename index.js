@@ -7,7 +7,7 @@ const uuid = require('uuid')
  * @module mali-requestid
  *
  * @param  {Options} options
- * @param  {String} options.name Optional name of the metadata object property. Default: <code>'requestid'</code>
+ * @param  {String} options.name Optional name of the metadata object property. Default: <code>'requestId'</code>
  * @param  {String|Boolean} options.target Optional name of the <code>ctx</code> property to set request id into.
  *                                         If not provided it is equal to <code>options.name</code>.
  * @param  {Function} options.generator Synchronous function to generate the request id if not present.
