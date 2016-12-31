@@ -28,8 +28,9 @@ is not present creates one using UUID and sets it into metadata and context.
 const rid = require('mali-requestid')
 
 app.use(rid())
-app.use('myFn', async (ctx) {
+app.use('myFn', async (ctx, next) => {
   console.log(ctx.requestId) // request ID from metadata
+  await next()
 })
 ```
 
