@@ -25,15 +25,14 @@
   ],
   "scripts": {
     "test": "ava -v",
-    "docs": "jsdoc2md index.js --heading-depth 3 --template readme.hbs | md-wrap-code > README.md"
+    "docs": "jsdoc2md index.js --heading-depth 3 --template readme.hbs > README.md"
   },
   "devDependencies": {
-    "async-to-gen": "^1.2.0",
-    "ava": "^0.23.0",
-    "grpc-caller": "^0.3.0",
-    "jsdoc-to-markdown": "^3.0.0",
-    "mali": "^0.4.0",
-    "md-wrap-code": "^0.1.1",
+    "ava": "^0.24.0",
+    "grpc": "^1.8.0",
+    "grpc-caller": "^0.3.1",
+    "jsdoc-to-markdown": "^3.0.3",
+    "mali": "^0.6.0",
     "standard": "^10.0.0"
   },
   "dependencies": {
@@ -42,9 +41,6 @@
   "ava": {
     "files": [
       "test/*.test.js"
-    ],
-    "require": [
-      "async-to-gen/register"
     ]
   }
 }
