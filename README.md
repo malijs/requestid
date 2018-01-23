@@ -1,11 +1,10 @@
 # mali-requestid
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/malijs/requestid.svg)](https://greenkeeper.io/)
-
 Mali request ID metadata middleware sources request ID into context
 
 [![npm version](https://img.shields.io/npm/v/mali-requestid.svg?style=flat-square)](https://www.npmjs.com/package/mali-requestid)
 [![build status](https://img.shields.io/travis/malijs/requestid/master.svg?style=flat-square)](https://travis-ci.org/malijs/requestid)
+[![Greenkeeper badge](https://badges.greenkeeper.io/malijs/requestid.svg)](https://greenkeeper.io/)
 
 ## API
 
@@ -21,11 +20,10 @@ is not present creates one using UUID and sets it into metadata and context.
 | --- | --- | --- |
 | options | <code>Options</code> |  |
 | options.name | <code>String</code> | Optional name of the metadata object property. Default: <code>'requestId'</code> |
-| options.target | <code>String</code> &#124; <code>Boolean</code> | Optional name of the <code>ctx</code> property to set request id into.                                         If not provided it is equal to <code>options.name</code>. |
+| options.target | <code>String</code> \| <code>Boolean</code> | Optional name of the <code>ctx</code> property to set request id into.                                         If not provided it is equal to <code>options.name</code>. |
 | options.generator | <code>function</code> | Synchronous function to generate the request id if not present.                                      Has to return a string. Default: <code>uuid</code> library. |
 
 **Example**  
-
 ```js
 const rid = require('mali-requestid')
 
@@ -35,7 +33,6 @@ app.use('myFn', async (ctx, next) => {
   await next()
 })
 ```
-
 ## License
 
   Apache-2.0
