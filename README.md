@@ -1,5 +1,7 @@
 # mali-requestid
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/malijs/requestid.svg)](https://greenkeeper.io/)
+
 Mali request ID metadata middleware sources request ID into context
 
 [![npm version](https://img.shields.io/npm/v/mali-requestid.svg?style=flat-square)](https://www.npmjs.com/package/mali-requestid)
