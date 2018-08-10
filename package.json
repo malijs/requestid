@@ -33,7 +33,7 @@
     "grpc": "^1.13.1",
     "grpc-caller": "^0.9.0",
     "jsdoc-to-markdown": "^4.0.1",
-    "mali": "^0.9.0",
+    "mali": "0.9.0",
     "standard": "^11.0.0"
   },
   "dependencies": {
