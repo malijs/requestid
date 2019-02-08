@@ -4,7 +4,7 @@ const uuid = require('uuid')
  * Mali request ID metadata middleware. If the call has metadata with the request ID
  * (or specified property) sets it into the context into target property. If request ID
  * is not present creates one using UUID and sets it into metadata and context.
- * @module mali-requestid
+ * @module @malijs/requestid
  *
  * @param  {Options} options
  * @param  {String} options.name Optional name of the metadata object property. Default: <code>'requestId'</code>
@@ -14,7 +14,7 @@ const uuid = require('uuid')
  *                                      Has to return a string. Default: <code>uuid</code> library.
  *
  * @example
- * const rid = require('mali-requestid')
+ * const rid = require('@malijs/requestid')
  *
  * app.use(rid())
  * app.use('myFn', async (ctx, next) => {

@@ -324,7 +324,7 @@ test('Should work custom generator & target = false when no metadata, + async mi
   t.plan(3)
   const response = await client.sayHello8({ name: 'Bob' })
   t.truthy(response)
-  t.is(response.message1, '1234:mali-requestid')
+  t.is(response.message1, '1234:@malijs/requestid')
   t.falsy(response.message2)
 })
 
@@ -334,7 +334,7 @@ test('Should work custom generator & target = false when request id is not there
   meta.add('foo', 'bar')
   const response = await client.sayHello8({ name: 'Bob' }, meta)
   t.truthy(response)
-  t.is(response.message1, '1234:mali-requestid')
+  t.is(response.message1, '1234:@malijs/requestid')
   t.falsy(response.message2)
 })
 
@@ -344,7 +344,7 @@ test('Should work custom generator & target = false when request id provided in 
   meta.add('requestId', 'foo')
   const response = await client.sayHello8({ name: 'Bob' }, meta)
   t.truthy(response)
-  t.is(response.message1, 'foo:mali-requestid')
+  t.is(response.message1, 'foo:@malijs/requestid')
   t.falsy(response.message2)
 })
 

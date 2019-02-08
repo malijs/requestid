@@ -1,16 +1,15 @@
-# mali-requestid
+# @malijs/requestid
 
 Mali request ID metadata middleware sources request ID into context
 
-[![npm version](https://img.shields.io/npm/v/mali-requestid.svg?style=flat-square)](https://www.npmjs.com/package/mali-requestid)
+[![npm version](https://img.shields.io/npm/v/@malijs/requestid.svg?style=flat-square)](https://www.npmjs.com/package/@malijs/requestid)
 [![build status](https://img.shields.io/travis/malijs/requestid/master.svg?style=flat-square)](https://travis-ci.org/malijs/requestid)
-[![Greenkeeper badge](https://badges.greenkeeper.io/malijs/requestid.svg)](https://greenkeeper.io/)
 
 ## API
 
-<a name="module_mali-requestid"></a>
+<a name="module_@malijs/requestid"></a>
 
-### mali-requestid
+### @malijs/requestid
 Mali request ID metadata middleware. If the call has metadata with the request ID
 (or specified property) sets it into the context into target property. If request ID
 is not present creates one using UUID and sets it into metadata and context.
@@ -25,7 +24,7 @@ is not present creates one using UUID and sets it into metadata and context.
 
 **Example**  
 ```js
-const rid = require('mali-requestid')
+const rid = require('@malijs/requestid')
 
 app.use(rid())
 app.use('myFn', async (ctx, next) => {
