@@ -1,6 +1,6 @@
 {
   "name": "@malijs/requestid",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Mali request ID metadata middleware sources request ID into context",
   "main": "index.js",
   "repository": {
